@@ -49,6 +49,11 @@ class User(db.Model):
         db.String(255)
     )
 
+    security_answer = db.Column(
+        db.String(255),
+        nullable=True
+    )
+
     role = db.Column(
         db.String(20),
         default="applicant"
