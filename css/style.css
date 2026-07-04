@@ -1171,6 +1171,12 @@ header.scrolled {
 
 }
 
+.footer-social a:hover{
+
+  transform:translateY(-3px) scale(1.08);
+  
+}
+
 .chetna-footer h3{
 
     font-size:32px;
