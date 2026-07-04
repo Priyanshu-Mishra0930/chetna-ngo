@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chetna Welfare Trust</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/intern_dash.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+rel="icon"
+type="image/png"
+href="assets/images/favicon.png">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="Chetna Logo" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown">
+            <a href="#">
+              Internship
+              <i class="fas fa-chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="apply.html"> Apply for Internship </a>
+              </li>
+
+              <li>
+                <a href="intern.html"> Intern Portal </a>
+              </li>
+
+              <li>
+                <a href="alumni.html"> Alumni </a>
+              </li>
+
+              <li>
+                <a href="verify.html"> Verify Certificate </a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-logout">
+    <button
+        id="mobile-logout-btn"
+        class="logout-btn mobile-logout-btn"
+        type="button">
+        <i class="fas fa-right-from-bracket"></i>
+        Logout
+    </button>
+</li>
+        </ul>
+        <button
+    class="logout-btn desktop-logout"
+    id="logout-btn"
+    type="button">
+
+    <i class="fas fa-right-from-bracket"></i>
+    Logout
+
+</button>
+      </nav>
+    </header>
+    <main class="intern-dashboard">
+      <section class="dashboard-hero">
+        <h1 id="intern-name">Welcome,👋</h1>
+        <p>Intern Dashboard</p>
+      </section>
+
+      <section class="dashboard-grid">
+        <!-- Progress -->
+
+        <div class="dashboard-card">
+          <h2>Progress</h2>
+
+          <h3 id="hours-text">32 / 30 Hours</h3>
+
+          <div class="progress-bar">
+    <div
+        id="progress-fill"
+        class="progress-fill"
+    ></div>
+</div>
+
+          <p id="progress-text">80% Completed</p>
+        </div>
+
+        <!-- Status -->
+
+        <div class="dashboard-card">
+
+  <h2>Status</h2>
+
+ <p>
+    <strong>Status:</strong>
+    <span id="status-text">
+        -
+    </span>
+</p>
+
+<p>
+    <strong>Certificate:</strong>
+    <span id="certificate-status">
+        -
+    </span>
+</p>
+
+<p>
+    <strong>Best Intern:</strong>
+    <span id="best-intern-status">
+        -
+    </span>
+</p>
+<div id="certificate-message" class="certificate-message"></div>
+
+  <div class="certificate-actions">
+
+    <button class="certificate-btn">
+      Generate Certificate
+    </button>
+
+    <button class="best-certificate-btn">
+      Best Intern Certificate
+    </button>
+
+  </div>
+
+</div>
+
+      <!-- Submit Work -->
+
+      <section class="dashboard-card work-card">
+        <h2>Submit Today's Work</h2>
+
+        <textarea id="work-description" placeholder="Describe your work..."></textarea>
+
+        <input type="number" id="work-hours" placeholder="Hours Worked" />
+        <div id="work-message" class="work-message"></div>
+        <button class="submit-btn">Submit Work</button>
+      </section>
+
+      <!-- Recent Logs -->
+
+      <section class="dashboard-card">
+
+    <h2>
+        Recent Work Logs
+    </h2>
+
+    <div id="logs-container">
+
+    </div>
+
+</section>
+    </main>
+    <div id="certificate-modal" class="modal">
+
+  <div class="modal-content">
+
+    <div class="modal-icon">
+      <i class="fas fa-triangle-exclamation"></i>
+    </div>
+
+    <h2>Generate Certificate?</h2>
+
+    <p>
+      Once you generate your internship certificate, your internship will be
+      marked as completed and your account will become inactive.
+    </p>
+
+    <p>
+      You will not be able to log in again unless an administrator reactivates
+      your account.
+    </p>
+
+    <h3>Do you want to continue?</h3>
+
+    <div class="modal-buttons">
+
+      <button id="cancel-certificate" class="cancel-btn">
+        No, Cancel
+      </button>
+
+      <button id="confirm-certificate" class="confirm-btn">
+        Yes, Generate Certificate
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+  </body>
+  <script src="js/script.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/intern.js"></script>
+</html>

@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+rel="icon"
+type="image/png"
+href="assets/images/favicon.png">
+    <title>Alumni | Chetna Welfare Trust</title>
+
+<meta name="description"
+content="Meet the alumni of Chetna Welfare Trust who have successfully completed their internship journey and contributed to social impact initiatives.">
+
+<link rel="canonical"
+href="https://chetnawelfaretrust.org/alumni.html">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title"
+content="Alumni | Chetna Welfare Trust">
+
+<meta property="og:url"
+content="https://chetnawelfaretrust.org/alumni.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/alumni.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="Chetna Logo" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown">
+            <a href="#">
+              Internship
+              <i class="fas fa-chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="apply.html"> Apply for Internship </a>
+              </li>
+
+              <li>
+                <a href="intern.html"> Intern Portal </a>
+              </li>
+
+              <li>
+                <a href="alumni.html"> Alumni </a>
+              </li>
+
+              <li>
+                <a href="verify.html"> Verify Certificate </a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-donate">
+            <a href="donate.html">Donate Now</a>
+          </li>
+        </ul>
+        <a href="donate.html" class="donate-btn"> Donate Now </a>
+        <div class="navbar-social">
+          <a
+            href="https://www.facebook.com/profile.php?id=61560258104470&mibextid=ZbWKwL"
+            target="_blank" class="facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <a
+            href="https://www.instagram.com/chetnawelfaretrust?igsh=Z28xZHllMmFvMW11"
+            target="_blank" class="instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <a
+            href="https://www.linkedin.com/in/chetna-welfare-trust?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank" class="linkedin"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <a
+            href="https://youtube.com/@chetnawelfaretrust?si=_4O9Bzo_yJqtddMz"
+            target="_blank" class="youtube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+
+          <a
+            href="https://x.com/chetnatrust1?t=NBhVARQ-8XeHVp4KHiUsDQ&s=09"
+            target="_blank" class="twitter"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <section class="alumni-hero">
+      <div class="alumni-hero-content">
+        <span class="section-tag"> Alumni Network </span>
+
+        <h1>Our Alumni Community</h1>
+
+        <p>
+          Celebrating the contributions of interns who have supported education,
+          leadership, community development and social impact initiatives
+          through Chetna Welfare Trust.
+        </p>
+      </div>
+    </section>
+    <section class="alumni-stats hidden">
+      <div class="stat-card sc">
+        <h2 id="total-alumni">0</h2>
+
+        <p>Total Alumni</p>
+      </div>
+
+      <div class="stat-card sc">
+        <h2>50+</h2>
+
+        <p>Partner Colleges</p>
+      </div>
+
+      <div class="stat-card sc">
+        <h2 id="total-best-interns">0</h2>
+
+        <p>Best Interns</p>
+      </div>
+    </section>
+    <section class="alumni-search hidden">
+      <div class="section-title">
+        <h2>Find Alumni</h2>
+
+        <p>Search by name, college or year.</p>
+      </div>
+
+      <div class="search-box">
+        <input
+          id="search-alumni"
+          type="text"
+          placeholder="Search by Name or College"
+        />
+
+        <select id="college-filter">
+          <option value="all">All Colleges</option>
+        </select>
+
+        <select id="year-filter">
+          <option value="all">All Years</option>
+        </select>
+      </div>
+    </section>
+    <section class="alumni-directory hidden">
+      <div class="section-title">
+        <h2>Alumni Directory</h2>
+
+        <p>Meet the interns who contributed to our mission.</p>
+      </div>
+
+      <div id="alumni-container" class="alumni-grid"></div>
+
+      <div id="best-intern-container" class="best-grid"></div>
+    </section>
+    <section class="alumni-cta hidden">
+      <div class="cta-content">
+        <span class="section-tag"> Join Us </span>
+
+        <h2>Become Part Of Our Alumni Network</h2>
+
+        <p>
+          Contribute your skills, gain experience and create meaningful social
+          impact.
+        </p>
+
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn-secondary"> Contact Us </a>
+
+          <a href="apply.html" class="btn-primary"> Apply For Internship </a>
+        </div>
+      </div>
+    </section>
+       <footer>
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Chetna Welfare Trust</h3>
+
+          <p>
+            Empowering communities through education, innovation and sustainable
+            development.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="programs.html">Programs</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+
+          <p>Email: chetnatrust1@gmail.com</p>
+          <p>Phone: +91 7677377696</p>
+
+          <p>Chatnahi, Latehar, Jharkhand, India</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+
+          <div class="footer-col">
+          <h3>Follow Us</h3>
+
+          <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61560258104470&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="https://www.instagram.com/chetnawelfaretrust?igsh=Z28xZHllMmFvMW11" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.linkedin.com/in/chetna-welfare-trust?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="https://youtube.com/@chetnawelfaretrust?si=_4O9Bzo_yJqtddMz" target="_blank"><i class="fab fa-youtube"></i></a>
+
+            <a href="https://x.com/chetnatrust1?t=NBhVARQ-8XeHVp4KHiUsDQ&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Chetna Welfare Trust. All Rights Reserved.
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/alumni.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <title>Apply for Internship | Chetna Welfare Trust</title>
+
+    <meta
+      name="description"
+      content="Apply for the Chetna Welfare Trust Internship Program and contribute to meaningful community development initiatives."
+    />
+
+    <link rel="canonical" href="https://chetnawelfaretrust.org/apply.html" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="Apply for Internship | Chetna Welfare Trust"
+    />
+
+    <meta
+      property="og:url"
+      content="https://chetnawelfaretrust.org/apply.html"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/apply.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="Chetna Logo" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown">
+            <a href="#">
+              Internship
+              <i class="fas fa-chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="apply.html"> Apply for Internship </a>
+              </li>
+
+              <li>
+                <a href="intern.html"> Intern Portal </a>
+              </li>
+
+              <li>
+                <a href="alumni.html"> Alumni </a>
+              </li>
+
+              <li>
+                <a href="verify.html"> Verify Certificate </a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-donate">
+            <a href="donate.html">Donate Now</a>
+          </li>
+        </ul>
+        <a href="donate.html" class="donate-btn"> Donate Now </a>
+        <div class="navbar-social">
+          <a
+            href="https://www.facebook.com/profile.php?id=61560258104470&mibextid=ZbWKwL"
+            target="_blank" class="facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <a
+            href="https://www.instagram.com/chetnawelfaretrust?igsh=Z28xZHllMmFvMW11"
+            target="_blank" class="instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <a
+            href="https://www.linkedin.com/in/chetna-welfare-trust?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank" class="linkedin"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <a
+            href="https://youtube.com/@chetnawelfaretrust?si=_4O9Bzo_yJqtddMz"
+            target="_blank" class="youtube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+
+          <a
+            href="https://x.com/chetnatrust1?t=NBhVARQ-8XeHVp4KHiUsDQ&s=09"
+            target="_blank" class="twitter"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <section class="apply-hero">
+      <div class="apply-container">
+        <span class="section-tag"> Internship Application </span>
+
+        <h1>Apply For Internship</h1>
+
+        <p>
+          Join our mission to create meaningful social impact through education,
+          community engagement and youth leadership.
+        </p>
+
+        <form id="apply-form" class="apply-form">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input id="name" type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label>College / University</label>
+            <input id="college" type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label>Course</label>
+            <input id="course" type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label>Current Year</label>
+            <select id="year" required>
+              <option>Select Year</option>
+              <option value="1">1st Year</option>
+              <option value="2">2nd Year</option>
+              <option value="3">3rd Year</option>
+              <option value="4">4th Year</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Email Address</label>
+            <input id="email" type="email" required />
+          </div>
+
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input id="phone" type="tel" required />
+          </div>
+
+          <div class="form-group">
+            <label>Why Do You Want To Join?</label>
+            <textarea id="why_join" rows="6"></textarea>
+          </div>
+          <div id="apply-message" class="apply-message"></div>
+          <button type="submit" class="btn-primary">Submit Application</button>
+        </form>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/apply.js"></script>
+  </body>
+</html>

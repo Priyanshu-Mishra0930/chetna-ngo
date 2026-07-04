@@ -1,0 +1,243 @@
+.donate-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 10%;
+  color: #fff;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../assets/images/donate-banner.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.donate-hero-content {
+  max-width: 850px;
+}
+
+.donate-hero h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.donate-hero p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.qr-donation {
+  padding: 100px 10%;
+  background: #fff;
+}
+
+.qr-donation .container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.qr-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.qr-box {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.qr-box img {
+  width: 280px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.donation-highlights {
+  margin-top: 30px;
+  display: grid;
+  gap: 15px;
+}
+
+.highlight-box {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.highlight-box i {
+  color: #f4a825;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .donate-hero h1 {
+    font-size: 2rem;
+  }
+
+  .qr-donation {
+    padding: 70px 6%;
+  }
+
+  .qr-donation .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .donate-hero p {
+    font-size: 14px;
+  }
+}
+.bank-details {
+  padding: 100px 10%;
+  background: #ffffff;
+}
+
+.bank-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.bank-card {
+  background: #f9f9f9;
+  padding: 35px;
+  border-radius: 20px;
+}
+
+.bank-card i {
+  font-size: 40px;
+  color: #f4a825;
+  margin-bottom: 20px;
+}
+
+.bank-card h3 {
+  margin-bottom: 20px;
+}
+
+.bank-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bank-card li {
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 1.7;
+}
+
+.bank-card li:last-child {
+  border-bottom: none;
+}
+@media (max-width: 768px) {
+  .bank-details {
+    padding: 70px 6%;
+  }
+
+  .bank-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.donation-faq {
+  padding: 100px 10%;
+  background: #f9f9f9;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.8;
+}
+.donate-cta {
+  padding: 100px 10%;
+  text-align: center;
+  color: #fff;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/donate-cta.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.donate-cta .cta-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.donate-cta h2 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.donate-cta p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .donate-cta {
+    padding: 70px 6%;
+  }
+
+  .donate-cta h2 {
+    font-size: 2rem;
+  }
+
+  .donate-cta p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .donate-cta p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .cta-buttons a {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+}

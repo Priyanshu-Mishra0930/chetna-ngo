@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+rel="icon"
+type="image/png"
+href="assets/images/favicon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chetna Welfare Trust</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body id="top">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="Chetna Logo" />
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
+          <li><a href="intern.html">Intern Portal</a></li>
+          <li>
+            <a href="verify.html"> Verify Certificate </a>
+          </li>
+          <li class="mobile-donate">
+            <a href="donate.html">Donate Now</a>
+          </li>
+        </ul>
+
+        <a href="donate.html" class="donate-btn"> Donate Now </a>
+      </nav>
+    </header>
+    <section class="admin-dashboard">
+      <aside class="admin-sidebar">
+
+  <!-- <h3>CWT Admin</h3> -->
+</div>
+        <h2>CWT Admin</h2>
+
+        <ul>
+          <li>
+            <a href="#dashboard-section"> Dashboard </a>
+          </li>
+
+          <li>
+            <a href="#applications-section"> Applications </a>
+          </li>
+
+          <li>
+            <a href="#interns-section"> Interns </a>
+          </li>
+
+          <li>
+            <a href="alumni.html"> Alumni </a>
+          </li>
+
+          <li>
+            <button class="sidebar-logout-btn">
+              Logout
+            </button>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+
+      <main class="admin-content">
+        <!-- DASHBOARD -->
+
+        <div class="dashboard-header">
+          <h1>Admin Dashboard</h1>
+
+          <p>Welcome back, Administrator.</p>
+        </div>
+
+        <div class="admin-stats">
+          <div id="dashboard-section" class="admin-card s-c">
+            <h2 id="pending-count">15</h2>
+
+            <p>Pending Applications</p>
+          </div>
+
+          <div class="admin-card s-c">
+            <h2 id="intern-count">0</h2>
+
+            <p>Active Interns</p>
+          </div>
+
+          <div class="admin-card s-c">
+            <h2>0</h2>
+
+            <p>Alumni</p>
+          </div>
+
+          <div class="admin-card s-c">
+            <h2 id="best-intern-count">0</h2>
+
+            <p>Best Interns</p>
+          </div>
+        </div>
+
+        <!-- APPLICATIONS -->
+
+        <section
+          id="applications-section"
+          class="applications-section"
+        >
+
+          <h2>Pending Applications</h2>
+          <div class="application-controls">
+
+    <input
+        type="text"
+        id="search-application"
+        placeholder="Search applications..."
+    >
+
+</div>
+
+          <div id="applications-container">
+
+          </div>
+
+        </section>
+
+        <!-- INTERNS -->
+
+        <section id="interns-section" class="interns-section">
+
+    <h2>Active Interns</h2>
+    <div class="intern-controls">
+
+    <input
+        type="text"
+        id="search-intern"
+        placeholder="Search by name, email or college..."
+    >
+
+    <select id="status-filter">
+
+        <option value="all">
+            All Interns
+        </option>
+
+        <option value="active">
+            Active
+        </option>
+
+        <option value="inactive">
+            Inactive
+        </option>
+
+    </select>
+
+</div>
+
+    <div id="interns-container">
+
+    </div>
+
+</section>
+      </main>
+    </section>
+    <div id="password-modal" class="password-modal">
+
+    <div class="password-modal-content">
+
+        <h3>
+            Account Approved
+        </h3>
+
+        <p>
+            Temporary Password
+        </p>
+
+        <div class="password-box">
+
+            <span id="generated-password">
+            </span>
+
+            <button
+                id="copy-password-btn"
+            >
+                Copy
+            </button>
+
+        </div>
+
+        <button
+            id="close-password-modal"
+        >
+            Close
+        </button>
+
+    </div>
+
+</div>
+<div id="confirm-modal" class="confirm-modal">
+
+    <div class="confirm-modal-content">
+
+        <div id="confirm-icon" class="confirm-icon">
+            <i class="fas fa-circle-question"></i>
+        </div>
+
+        <h2 id="confirm-title">
+            Confirmation
+        </h2>
+
+        <p id="confirm-message">
+            Are you sure?
+        </p>
+
+        <div class="confirm-actions">
+
+            <button
+                id="cancel-action-btn"
+                class="cancel-btn"
+            >
+                Cancel
+            </button>
+
+            <button
+                id="confirm-action-btn"
+                class="confirm-btn"
+            >
+                Confirm
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,357 @@
+.alumni-hero {
+  min-height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 120px 10%;
+
+  color: white;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../assets/images/alumni-banner.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.alumni-hero-content {
+  max-width: 850px;
+}
+
+.alumni-hero h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.alumni-hero p {
+  line-height: 1.8;
+}
+.alumni-stats {
+  padding: 100px 10%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  background: #f9f9f9;
+}
+
+.alumni-stats .stat-card {
+  background: #fff;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.alumni-stats .stat-card h2 {
+  font-size: 2.5rem;
+
+  color: #f4a825;
+
+  margin-bottom: 10px;
+}
+
+.alumni-stats .stat-card p {
+  color: #666;
+
+  font-size: 1rem;
+}
+.alumni-search {
+  padding: 100px 10%;
+
+  background: #fff;
+}
+
+.search-box {
+  margin-top: 50px;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr;
+
+  gap: 20px;
+}
+
+.search-box input,
+.search-box select {
+  padding: 15px 18px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  font-family: "Poppins", sans-serif;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.search-box input:focus,
+.search-box select:focus {
+  border-color: #f4a825;
+
+  box-shadow: 0 0 0 3px rgba(244, 168, 37, 0.15);
+}
+@media (max-width: 768px) {
+  .alumni-stats {
+    grid-template-columns: 1fr;
+
+    padding: 70px 6%;
+  }
+
+  .alumni-search {
+    padding: 70px 6%;
+  }
+
+  .search-box {
+    grid-template-columns: 1fr;
+  }
+}
+.alumni-directory {
+  padding: 100px 10%;
+
+  background: #f9f9f9;
+}
+
+.alumni-grid {
+  margin-top: 50px;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 30px;
+}
+
+.alumni-card {
+  background: #fff;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.alumni-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.alumni-card h3 {
+  font-size: 1.4rem;
+
+  margin-bottom: 8px;
+
+  color: #222;
+}
+
+.college {
+  display: inline-block;
+
+  color: #f4a825;
+
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.alumni-info p {
+  margin-bottom: 10px;
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+.best-badge {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  background: #fff4d6;
+
+  color: #d48a00;
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .alumni-directory {
+    padding: 70px 6%;
+  }
+
+  .alumni-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.best-interns {
+  padding: 100px 10%;
+
+  background: #fff;
+}
+
+.best-grid {
+  margin-top: 50px;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 30px;
+}
+
+.best-card {
+  text-align: center;
+
+  background: #fffaf0;
+
+  border: 2px solid #f4a825;
+
+  border-radius: 20px;
+
+  padding: 35px;
+}
+
+.trophy {
+  font-size: 3rem;
+
+  margin-bottom: 15px;
+}
+
+.best-card h3 {
+  margin-bottom: 10px;
+}
+
+.best-card p {
+  line-height: 1.8;
+}
+@media (max-width: 768px) {
+  .best-interns {
+    padding: 70px 6%;
+  }
+}
+.alumni-cta {
+  padding: 100px 10%;
+
+  text-align: center;
+
+  color: white;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/alumni-cta.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.alumni-cta .cta-content {
+  max-width: 800px;
+
+  margin: auto;
+}
+
+.alumni-cta h2 {
+  font-size: 3rem;
+
+  margin: 20px 0;
+}
+
+.alumni-cta p {
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .alumni-cta {
+    padding: 70px 6%;
+  }
+
+  .alumni-cta h2 {
+    font-size: 2rem;
+  }
+}
+.contact-btn {
+  width: 100%;
+
+  margin-top: 20px;
+
+  border: none;
+
+  background: #f4a825;
+
+  color: white;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+
+  opacity: 0.9;
+}
+
+.contact-info {
+  max-height: 0;
+
+  overflow: hidden;
+
+  margin-top: 0;
+
+  background: #f8f8f8;
+
+  border-radius: 10px;
+
+  transition:
+    max-height 0.4s ease,
+    padding 0.4s ease,
+    margin-top 0.4s ease;
+}
+
+.contact-info.active {
+  max-height: 200px;
+
+  padding: 15px;
+
+  margin-top: 15px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+
+  color: #555;
+}
