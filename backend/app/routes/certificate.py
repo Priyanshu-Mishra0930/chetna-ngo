@@ -321,7 +321,7 @@ def generate_certificate(
         pdf.drawCentredString(
             975,
             600,
-            str(user.id)
+            str(user.regnum)
         )
         
         id_number = user.certificate_number
@@ -522,7 +522,7 @@ def generate_best_certificate(
             890,
             125,
 
-            str(user.id)
+            str(user.regnum)
 
         )
         verify_url = (

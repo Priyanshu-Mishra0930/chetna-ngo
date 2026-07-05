@@ -28,6 +28,11 @@ class User(db.Model):
         nullable=False
     )
 
+    regnum = db.Column(
+        db.String(100),
+        nullable=True
+    )
+
     year = db.Column(
         db.Integer,
         nullable=False

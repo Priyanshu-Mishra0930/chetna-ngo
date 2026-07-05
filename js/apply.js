@@ -10,6 +10,8 @@ document.getElementById("apply-form").addEventListener("submit", async (e) => {
 
   const course = document.getElementById("course").value;
 
+  const regnum = document.getElementById("regnum").value;
+
   const year = document.getElementById("year").value;
 
   const email = document.getElementById("email").value;
@@ -33,6 +35,7 @@ document.getElementById("apply-form").addEventListener("submit", async (e) => {
           name,
           college,
           course,
+          regnum,
           year,
           email,
           phone,

@@ -43,6 +43,7 @@ def apply():
         "name",
         "college",
         "course",
+        "regnum",
         "year",
         "email",
         "phone",
@@ -87,6 +88,8 @@ def apply():
         college=data["college"],
 
         course=data["course"],
+        
+        regnum=data["regnum"],
 
         year=data["year"],
 
