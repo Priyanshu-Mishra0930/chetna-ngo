@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://chetnabackend-production.up.railway.app";
 const messageBox = document.getElementById("work-message");
 const userId = localStorage.getItem("user_id");
 const certificateMessage = document.getElementById("certificate-message");

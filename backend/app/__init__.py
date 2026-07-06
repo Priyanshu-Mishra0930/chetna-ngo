@@ -17,6 +17,8 @@ def create_app():
     app,
     supports_credentials=True,
     origins=[
+        "https://chetnawelfaretrust.org",
+        "https://www.chetnawelfaretrust.org",
         "http://127.0.0.1:5500",
         "http://localhost:5500"
     ]

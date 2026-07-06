@@ -4,10 +4,13 @@ __pycache__/
 *.pyo
 
 # Virtual Environment
-backend/.env/
-backend/venv/
 venv/
-.env/
+backend/venv/
+
+# Environment Variables
+.env
+backend/.env
+*.env
 
 # Flask
 instance/
@@ -22,10 +25,6 @@ Thumbs.db
 # Logs
 *.log
 
-# Database (if local)
+# Local Databases
 *.db
 *.sqlite3
-
-# Environment variables
-.env
-*.env

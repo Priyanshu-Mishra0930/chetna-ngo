@@ -8,7 +8,7 @@ loginForm.addEventListener("submit", async (e) => {
   const password = document.getElementById("password").value;
 
   try {
-    const response = await fetch("http://127.0.0.1:5000/login", {
+    const response = await fetch("https://chetnabackend-production.up.railway.app/login", {
       method: "POST",
 
       headers: {
@@ -144,7 +144,7 @@ setupBtn.addEventListener(
             const response =
                 await fetch(
 
-                    "http://127.0.0.1:5000/setup-account",
+                    "https://chetnabackend-production.up.railway.app/setup-account",
 
                     {
 
@@ -275,7 +275,7 @@ continueBtn.addEventListener(
             const response =
                 await fetch(
 
-                    "http://127.0.0.1:5000/forgot-password",
+                    "https://chetnabackend-production.up.railway.app/forgot-password",
 
                     {
 
@@ -398,7 +398,7 @@ resetBtn.addEventListener(
             const response =
                 await fetch(
 
-                    "http://127.0.0.1:5000/reset-password",
+                    "https://chetnabackend-production.up.railway.app/reset-password",
 
                     {
 

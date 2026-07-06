@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://chetnabackend-production.up.railway.app";
 const confirmModal = document.getElementById("confirm-modal");
 
 const confirmTitle = document.getElementById("confirm-title");
